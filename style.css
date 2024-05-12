@@ -58,13 +58,14 @@ code {
 }
 
 header {
-  width: 40ch;
+  width: 70ch;
   max-width: 100%;
   margin: 0 auto;
   font-size: 1.25rem;
   align-content: center;
   margin-top: 50px;
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -73,17 +74,17 @@ header {
 }
 
 .header-title {
-  padding: 0px 20px;
+  padding-left: 30px;
   font-size: 3.5rem;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   font-family: "Courier New", Courier, monospace;
 }
 
 .header-title-different {
-  display: block;
   color: #662e87;
   font-weight: 500;
+  letter-spacing: 1px;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -94,7 +95,7 @@ header svg {
 
 main {
   padding: 0 1rem;
-  width: 40ch;
+  width: 70ch;
   max-width: 100%;
   margin: 0 auto;
   font-size: 1.25rem;
@@ -211,18 +212,17 @@ footer {
   font-size: 1rem;
   font-family: "Geist Sans", "SF Pro Text", "SF Pro Icons", "AOS Icons",
     "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
-    font-weight: 400;
+  font-weight: 400;
 }
 
-.ul{
+.ul {
   list-style-type: none;
   padding: 20px 0px;
-  font-weight: 400;  
+  font-weight: 400;
   font-family: "Courier New", Courier, monospace;
-
 }
 
-.li{
+.li {
   padding: 4px 0px;
 }
 
@@ -243,5 +243,23 @@ body {
   }
   .header-title {
     padding: 0px 10px;
+  }
+}
+
+@media (width < 711px) {
+  .header-title {
+    font-size: 3rem;
+  }
+}
+
+@media (width < 639px) {
+  .header-title {
+    font-size: 2.7rem;
+  }
+}
+
+@media (width < 596px) {
+  .header-title {
+    font-size: 2.3rem;
   }
 }
