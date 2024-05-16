@@ -65,12 +65,13 @@ header {
   align-content: center;
   margin-top: 50px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .header-logo {
   width: 100%;
-  max-width: 100px;
+  max-width: 280px;
 }
 
 .header-title {
@@ -95,7 +96,7 @@ header svg {
 
 main {
   padding: 0 1rem;
-  width: 70ch;
+  width: 76ch;
   max-width: 100%;
   margin: 0 auto;
   font-size: 1.25rem;
@@ -239,7 +240,8 @@ body {
 
 @media (width < 425px) {
   .header-logo {
-    display: none;
+    width: 100%;
+    max-width: 200px;
   }
   .header-title {
     padding: 0px 10px;
